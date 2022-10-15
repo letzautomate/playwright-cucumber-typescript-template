@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber'
 
-Then('Verify Home Page is displayed', 
+Given(/^User enters username$/, 
     async function() {
-        console.log("Verify Home Page is displayed")
+        await global.page.locator("#identifierId").fill("Hello")
     })

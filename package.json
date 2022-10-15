@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test-initial": "cucumber-js ./features/**/*.feature --require-module ts-node/register --require ./src/step-definitions/**/*ts --require ./src/hooks/hooks.ts" 
+    "test-initial": "cucumber-js ./features/**/*.feature --require-module ts-node/register --require ./src/step-definitions/**/*ts --require ./src/hooks/hooks.ts",
+    "test-tags-smoke": "cucumber-js ./features/**/*.feature --tags @Smoke --require-module ts-node/register --require ./src/step-definitions/**/*.ts --require ./src/hooks/hooks.ts"
   },
   "repository": {
     "type": "git",

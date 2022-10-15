@@ -2,9 +2,7 @@
     "editor.detectIndentation": false,
     "window.zoomLevel": 2,
     "cucumberautocomplete.steps": [
-        "src/step-definitions/navigation/navigation.ts",
-        "src/step-definitions/validation/validation.ts"
-        
+        "src/step-definitions/**/*.ts"     
     ],
-    "cucumberautocomplete.syncfeatures": "src/features/Login.feature"
+    "cucumberautocomplete.syncfeatures": "src/features/*.feature"
 }
