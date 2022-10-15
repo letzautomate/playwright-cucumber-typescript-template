@@ -1,7 +1,7 @@
 import { Given } from '@cucumber/cucumber'
 
-Given('User is on the Login Page', 
-    async function () {
-    console.log('User is on the Login Page')
+Given(/^User is on the "([^"]*)" Page$/, 
+    async function (pageName:string) {
+    console.log(`User is on the ${pageName} Page`)
     await global.page.goto("https://gmail.com")
   });
